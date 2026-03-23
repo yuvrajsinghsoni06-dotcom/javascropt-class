@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="form">
+        <label for="EventTitle">Event Title</label>
+        <input type="text" id="EventTitle"></input><br>
+        <label for="Eventdate">Event date</label>
+        <input type="date" id="Eventdate"></input>
+        <label for="Category">Event Name</label>
+        <select id="Category">
+            <option value="conference">Conference</option>
+            <option value="Workshop">Workshop</option>
+            <option value="Meeting">Meeting</option>
+            <option value="Webiner">Webiner</option>
+            <option value="Social">Social</option>
+        </select><br>
+        <label for="Description">Description</label>
+        <input type="textarea" id="Description"></input><br>
+        <button type="submit">Submit</button><br>
+        <div class="event">
+            <button>Clear All Event</button>
+            <button>Add Sample Events</button>
+            <div class="event_cards"></div>
+
+        </div>
+        <script src="p1.js"></script>
+    </form>
+    
+</body>
+</html>
