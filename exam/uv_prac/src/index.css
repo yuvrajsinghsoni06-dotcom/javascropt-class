@@ -25,3 +25,31 @@
   cursor: pointer;
 
 }
+
+.Student{
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  padding: 10px;
+  border: 1px solid black;
+
+}
+
+.Student.p{
+  font-weight: 700;
+}
+
+.welcome_mess{
+  font-size: 2.5rem;
+  background-color: blueviolet;
+  color: white;
+  border-radius: 4px;
+
+
+
+}
+.reject_mess{
+  font-size: 2.5rem;
+  background-color: rgb(156, 22, 98);
+  color: rgb(165, 171, 67);
+  border-radius: 4px;
+}
