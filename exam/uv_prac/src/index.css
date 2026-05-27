@@ -17,13 +17,17 @@
 
 } */
 
-.btn{
-  background-color: yellowgreen;
-  color: black;
-  padding: 10px , 20px;
-  border: none;
-  cursor: pointer;
-
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  
+  padding: 12px 24px;       /* Adds breathing room inside the button */
+  min-width: 140px;         /* Forces a solid baseline width */
+  flex-shrink: 0;           /* Stops Flexbox from squishing it */
+  
+  font-size: 16px;          /* Makes sure the text itself isn't microscopic */
+  font-weight: 600;
 }
 
 .Student{
@@ -52,4 +56,70 @@
   background-color: rgb(156, 22, 98);
   color: rgb(165, 171, 67);
   border-radius: 4px;
+}
+/* Center everything on the page */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f0f2f5;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Card container for the counter */
+.container {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  min-width: 300px;
+}
+
+/* The count display text */
+.display {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 25px;
+}
+
+/* Style all buttons */
+button {
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 10px 20px;
+  margin: 0 8px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Specific button variations based on their text content */
+button:nth-of-type(1) {
+  background-color: #4caf50; /* Green for max+ */
+  color: white;
+}
+
+button:nth-of-type(2) {
+  background-color: #f44336; /* Red for min- */
+  color: white;
+}
+
+button:nth-of-type(3) {
+  background-color: #757575; /* Gray for Reset */
+  color: white;
+}
+
+/* Hover and active states for better UX */
+button:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+button:active {
+  transform: translateY(1px);
 }
