@@ -1,0 +1,77 @@
+/* .box{
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    text-align: center;
+} */
+
+/* #btn {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: lightgreen; /* Default starting color */
+    
+    /* This stops the button from shaking or resizing when text changes */
+    /* min-width: 150px; 
+    transition: background-color 0.1s ease; */
+/* } */
+/* #btn{ */
+    /* padding : 3rem;
+} */ */
+/* body{
+    margin:0;
+}
+.btns{
+    font-size: 3rem;
+    padding: 1 rem 2 rem;
+    background-color: orange;
+    margin: 1 rem;
+
+} */
+
+
+/* Container to center and space out the buttons */
+.button-container {
+    display: flex;
+    gap: 15px;            /* Adds even spacing between buttons */
+    justify-content: center; /* Centers buttons horizontally */
+    align-items: center;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Base style for all buttons */
+.btns {
+    background-color: #4f46e5; /* Modern Indigo color */
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;        /* Smooth, rounded corners */
+    cursor: pointer;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    
+    /* Smooth transition animation for hover effects */
+    transition: all 0.2s ease-in-out; 
+    outline: none;
+}
+
+/* Hover state: What happens when the mouse glides over */
+.enabled {
+    background-color : rgb(197, 39, 49);
+}
+.hover{
+    box-shadow : 0 0 10px rgba(0, 0, 0, 0.5);
+    font-weight : bold;
+    background-color : yellow;
+
+}
+.disabled {
+    background-color : rgb(222, 190, 190);
+    color : red;
+
+
+}
